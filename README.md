@@ -1,1 +1,2 @@
 # COMPUTACION-EN-PARALELO-EN-PYTHON
+A continuación presento un ejemplo en Python que integra una red neuronal simple con técnicas de computación en paralelo para acelerar la inferencia. En este ejemplo utilizamos PyTorch para definir y entrenar el modelo y el módulo "concurrent.futures" para realizar la inferencia en paralelo dividiendo el conjunto de datos en “chunks”. Cada bloque se procesa en un hilo distinto, aprovechando que las operaciones en tensores (implementadas en C) liberan el GIL, lo que permite paralelismo efectivo en la inferencia.
